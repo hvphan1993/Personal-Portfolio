@@ -1,0 +1,44 @@
+:root {
+    --primary-color: #e27e15;
+    --secondary-color: #a9a0a0;
+    --tertiary-color: #0f68a6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styling body of portfolio */
+body {
+    color: var(--tertiary-color);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* styling header */
+header {
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary-color);
+}
+
+.avatar {
+   display: flex;
+   flex-direction: column;
+   justify-content: center; 
+   text-align: justify;
+   padding: 2px;
+   margin: 2px;
+}
+
+.avatar img {
+    width: 20%;
+    height: 32%;
+}
+
+div {
+    background-color: orange;
+}
