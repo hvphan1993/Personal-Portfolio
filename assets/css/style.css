@@ -25,20 +25,32 @@ header {
     color: var(--primary-color);
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
 .avatar {
-   display: flex;
    flex-direction: column;
    justify-content: center; 
    text-align: justify;
-   padding: 2px;
-   margin: 2px;
+   padding: 2px 0px;
+   flex: 1 0 0;
+   flex-wrap: wrap;
 }
 
 .avatar img {
-    width: 20%;
-    height: 32%;
+    width: 50%;
+    min-width: 400px;
 }
 
-div {
+.work-samples {
+    display: flex;
+    flex: 1 0 0;
+    flex-wrap: wrap;
+}
+
+section {
     background-color: orange;
 }
