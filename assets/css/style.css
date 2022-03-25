@@ -106,7 +106,7 @@ main {
 
 
 /* need to figure out how to align in row- flex didn't solve this */
-.work-samples {
+.samples {
     display: flex;
     flex: 1 0 0;
     flex-wrap: wrap;
