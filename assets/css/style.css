@@ -1,7 +1,8 @@
 :root {
     --primary-color: #e27e15;
-    --secondary-color: #a9a0a0;
+    --secondary-color: #eeeeee;
     --tertiary-color: #0f68a6;
+    --border-radius: 10px;
 }
 
 * {
@@ -16,39 +17,117 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* styling header */
+/* styling header 
+- including flex properties
+-including sticky property
+
+*/
 header {
     padding: 20px 35px;
     background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--secondary);
+}
+
+header a {
+    text-decoration: none;
     color: var(--primary-color);
 }
+
+header nav {
+    margin: 7px 0;
+}
+
+
+/* 
+forgot to add flex properties to nav ul and nav ul li a!
+
+*/
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+
 
 main {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2%;
+    margin-top: 0;
 }
 
 .avatar {
    flex-direction: column;
    justify-content: center; 
    text-align: justify;
-   padding: 2px 0px;
+   padding: 5px 5px;
    flex: 1 0 0;
    flex-wrap: wrap;
 }
 
-.avatar img {
-    width: 50%;
-    min-width: 400px;
+.avatar h2 {
+    flex-wrap: wrap;
+
 }
 
+.avatar img {
+    width: 45%;
+    min-width: 250px; 
+    border-radius: var(--border-radius);
+}
+
+.section-title {
+    font-size: 32px;
+    text-align: match-parent;
+    padding: 5px 5px;
+    font-style: italic;
+}
+
+
+/* need to figure out how to align in row- flex didn't solve this */
 .work-samples {
     display: flex;
     flex: 1 0 0;
     flex-wrap: wrap;
+}
+
+.work-sample {
+
+}
+
+.work-sample img {
+    width: 25%;
+    border-radius: var(--border-radius);
+}
+
+.sample-title {
+    color: var(--secondary-color);
+}
+
+/*adding in hover features to link titles */
+.sample-link a:hover {
+    color: white;
 }
 
 section {
