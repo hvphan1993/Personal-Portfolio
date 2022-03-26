@@ -171,6 +171,10 @@ mainsecond {
     background-color: var(--tertiary-color);
   }
 
+mainsecond h3 {
+    color: ;
+}
+
 .about-me {
     flex: 1;
     border: 5px solid black;
@@ -202,3 +206,15 @@ mainsecond {
 mainsecond h3 {
     text-align: center;
 }
+
+/* added text display on hover for flavor */
+
+.telephone {
+    display: none;
+}
+
+.phone:hover .telephone {
+    display: block;
+    color: var(--secondary-color);
+}
+
