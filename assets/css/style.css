@@ -75,15 +75,16 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
+    background-color: var(--secondary-color);
 }
 
 .avatar {
-   flex-direction: column;
-   justify-content: center; 
-   text-align: justify;
-   padding: 5px 5px;
+   flex-direction: column; 
+   text-align: center;
    flex: 1 0 0;
    flex-wrap: wrap;
+   padding: 20px 20px;
+   border: 5px solid black;
 }
 
 .avatar h2 {
@@ -92,14 +93,15 @@ main {
 }
 
 .avatar img {
-    width: 45%;
-    min-width: 250px; 
+    min-width: 150px;
+    width: 15%; 
     border-radius: var(--border-radius);
-}
+   }
 
-.section-title {
+/* set flex-basis so title would maintain spot above examples and not be smashed in*/
+
+   .section-title {
     font-size: 32px;
-    text-align: match-parent;
     padding: 5px 5px;
     font-style: italic;
     flex-basis: 100%;
@@ -107,13 +109,15 @@ main {
 }
 
 
-/* need to figure out how to align in row- flex didn't solve this */
+/* need to figure out how to align in row- flex didn't solve this but adding flex-wrap to .work-sample did*/
 .samples {
     display: flex;
     flex: 3 0 0;
     flex-wrap: wrap;
    /* changing color to view div box*/
-    background-color: black; 
+    background-color: var(--secondary-color); 
+    border: 5px solid black;
+    padding-bottom: 20px;
 }
 
 .work-sample {
@@ -121,11 +125,18 @@ main {
     flex: 1 0 0;
     flex-wrap: wrap;
     justify-content: center;
-}
+    }
 
 .work-sample img {
     width: 35%;
     border-radius: var(--border-radius);
+    transition: transform 0.25s ease;
+    margin: 5px 5px;
+}
+
+/* added in smooth enlarge on hover */
+.work-sample img:hover {
+    -webkit-transform: scale(1.5); transform: scale(1.5);
 }
 
 .sample-title {
@@ -143,7 +154,7 @@ main {
 }
 
 section {
-    background-color: orange;
+    
 }
 
 section article {
