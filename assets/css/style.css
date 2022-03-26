@@ -102,27 +102,39 @@ main {
     text-align: match-parent;
     padding: 5px 5px;
     font-style: italic;
+    flex-basis: 100%;
+    text-align: center;
 }
 
 
 /* need to figure out how to align in row- flex didn't solve this */
 .samples {
     display: flex;
-    flex: 1 0 0;
+    flex: 3 0 0;
     flex-wrap: wrap;
+   /* changing color to view div box*/
+    background-color: black; 
 }
 
 .work-sample {
-
+    display: flex;
+    flex: 1 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .work-sample img {
-    width: 25%;
+    width: 35%;
     border-radius: var(--border-radius);
 }
 
 .sample-title {
     color: var(--secondary-color);
+}
+
+.sample-link {
+    flex-basis: 100%;
+    text-align: center;
 }
 
 /*adding in hover features to link titles */
@@ -132,4 +144,8 @@ main {
 
 section {
     background-color: orange;
+}
+
+section article {
+    background-color: var(--secondary-color);
 }
