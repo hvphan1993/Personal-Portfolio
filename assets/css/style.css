@@ -32,6 +32,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 9999;
+    border: 5px solid black;
+    border-bottom: 0px;
 }
 
 header h1 {
@@ -117,6 +119,7 @@ main {
    /* changing color to view div box*/
     background-color: var(--secondary-color); 
     border: 5px solid black;
+    border-left: 0px;
     padding-bottom: 20px;
 }
 
@@ -153,26 +156,49 @@ main {
     color: white;
 }
 
-section {
+/* section {
     
 }
 
 section article {
    
 }
+*/
 
-main2 {
+mainsecond {
     display: flex;
-    }
+    flex-wrap: wrap;
+    background-color: var(--tertiary-color);
+  }
 
 .about-me {
     flex: 1;
-}
+    border: 5px solid black;
+    border-top: 0px;
+    color: var(--primary-color);
+  }
 
 .contact-me {
     flex: 1;
+    border-bottom: 5px solid black;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.contact-me ul li a {
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-color);
+    margin: 20px;
 }
 
 .resume {
     flex: 1;
+    border: 5px solid black;
+    border-top: 0px;
+    color: var(--primary-color);
+}
+
+mainsecond h3 {
+    text-align: center;
 }
