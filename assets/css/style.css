@@ -130,6 +130,10 @@ main {
     justify-content: center;
     }
 
+.work-sample a {
+    text-align: center;
+}
+
 .work-sample img {
     width: 35%;
     border-radius: var(--border-radius);
