@@ -153,7 +153,7 @@ main {
 
 /*adding in hover features to link titles */
 .sample-link a:hover {
-    color: white;
+    color: var(--primary-color);
 }
 
 /* section {
@@ -203,18 +203,51 @@ mainsecond h3 {
     color: var(--primary-color);
 }
 
-mainsecond h3 {
+mainsecond h2 {
     text-align: center;
 }
 
 /* added text display on hover for flavor */
 
-.telephone {
-    display: none;
-}
+/* list markers are too far left */
 
-.phone:hover .telephone {
-    display: block;
+.contact-me ul li a:hover {
     color: var(--secondary-color);
 }
 
+
+.phone:hover {
+    -webkit-transform: scale(1.4);
+    color: var(--secondary-color);
+    }
+
+.telephone {
+    display: none;
+    padding: 0px;
+    font-size: small;
+    
+}
+
+/* added blinker animation for flavor */
+
+.phone:hover .telephone {
+    display: block;
+    color: var(--secondary-color); 
+    -webkit-animation: blinker 1s step-start infinite;    
+   }
+
+@-webkit-keyframes blinker {
+    50% { opacity: 0.0; }
+   }
+
+.email:hover {
+    -webkit-transform: scale(1.2);
+}
+
+.linkedin:hover {
+    -webkit-transform: scale(1.2);
+}
+
+.github:hover {
+    -webkit-transform: scale(1.2);
+}
