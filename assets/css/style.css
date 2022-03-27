@@ -156,6 +156,10 @@ main {
     color: var(--primary-color);
 }
 
+main h3:hover {
+    color: var(--primary-color);
+}
+
 /* section {
     
 }
@@ -180,10 +184,16 @@ mainsecond h3 {
     border: 5px solid black;
     border-top: 0px;
     color: var(--primary-color);
+    padding: 20px 10px;
+  }
+
+  .about-me h3 {
+      text-align: center;
+      margin-top: 20px; 
   }
 
 .contact-me {
-    flex: 1;
+    flex: 0.8;
     border-bottom: 5px solid black;
     color: var(--primary-color);
     text-align: center;
@@ -193,7 +203,7 @@ mainsecond h3 {
     display: flex;
     flex-direction: column;
     color: var(--primary-color);
-    margin: 20px;
+    margin: 10px 0px;
 }
 
 .resume {
@@ -205,16 +215,20 @@ mainsecond h3 {
 
 mainsecond h2 {
     text-align: center;
+    margin: 20px 10px;
 }
-
-/* added text display on hover for flavor */
 
 /* list markers are too far left */
 
+.contact-me ul li {
+    list-style-type: none;
+    
+ } 
+
+/* added text display on hover for flavor */
 .contact-me ul li a:hover {
     color: var(--secondary-color);
 }
-
 
 .phone:hover {
     -webkit-transform: scale(1.4);
@@ -223,7 +237,6 @@ mainsecond h2 {
 
 .telephone {
     display: none;
-    padding: 0px;
     font-size: small;
     
 }
