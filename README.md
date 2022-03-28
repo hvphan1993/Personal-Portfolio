@@ -20,7 +20,7 @@ I wanted the header and nav to be sticky so that as my portfolio was updated in 
 
 
 ## Features
-I chose to make my work sample titles change color on hover to give the page a little extra. 
+I chose to make my work sample titles change color on hover to give the page a little extra flavor. 
 
 ![sample title color change on hover](./assets/images/sampletitlecolorchangeonhover.png)
 
