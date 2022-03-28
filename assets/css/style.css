@@ -282,6 +282,8 @@ mainsecond h2 {
     -webkit-transform: scale(1.2);
 }
 
+
+
 @media screen and (max-width: 768px) {
     main,
     nav,
