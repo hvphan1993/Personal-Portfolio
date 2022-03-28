@@ -30,9 +30,12 @@ The images of my work samples also enlarge on hover to give the viewer a sense o
 I added the hidden text below my phone number as a cheeky way to let potential callers know to leave a message so I can get back to them. 
 ![hidden text on hover over phone number](./assets/images/hiddentextphonenumber.png)
 
+I have my resume link blink as another way to make it enticing to check it out.
+![resume link blinking](./assets/images/resumeblink.png)
+
 To help make the website responsive on mobile devices I utilized flex properties in various sections and also applied media queries.
 ![example of media queries](./assets/images/mediaqueriesexamples.png)
 
 ## Github Link and Active Link
     Github link: git@github.com:hvphan1993/Personal-Portfolio.git
-    Active link: 
+    Active link: https://hvphan1993.github.io/Personal-Portfolio/
