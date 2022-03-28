@@ -95,7 +95,7 @@ main {
 }
 
 .avatar img {
-    min-width: 150px;
+    min-width: 200px;
     width: 15%; 
     border-radius: var(--border-radius);
    }
@@ -141,7 +141,20 @@ main {
     margin: 5px 5px;
 }
 
+.uno {
+    width: 40%;
+    text-align: center;
+    border-radius: var(--border-radius);
+    transition: transform 0.25s ease;
+    margin: 5px 5px;
+}
+
 /* added in smooth enlarge on hover */
+
+.uno img:hover {
+    -webkit-transform: scale(1.2); transform: scale(1.2);
+}
+
 .work-sample img:hover {
     -webkit-transform: scale(1.5); transform: scale(1.5);
 }
@@ -267,4 +280,25 @@ mainsecond h2 {
 
 .github:hover {
     -webkit-transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    nav,
+    mainsecond {
+      flex-direction: column;
+    }
+
+ @media screen and (max-width: 768px) {
+   /* header h1,*/
+    header h1 a {
+        font-size: 5.55vw;
+        color: var(--secondary-color);
+    }
+}
+
+@media screen and (max-width: 768px) {
+   header nav ul li a {
+        font-size: 4.55vw;
+    }
 }
