@@ -229,7 +229,7 @@ mainsecond {
 
 .resume a {
     font-size: 26px;
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 
 .resume a:hover {
@@ -250,12 +250,12 @@ mainsecond h2 {
 
 /* added text display on hover for flavor */
 .contact-me ul li a:hover {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 
 .phone:hover {
     -webkit-transform: scale(1.4);
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     }
 
 .telephone {
@@ -268,7 +268,7 @@ mainsecond h2 {
 
 .phone:hover .telephone {
     display: block;
-    color: var(--secondary-color); 
+    color: var(--tertiary-color); 
     -webkit-animation: blinker 1s step-start infinite;    
    }
 
